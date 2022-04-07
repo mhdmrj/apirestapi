@@ -12,6 +12,11 @@ app.use(morgan('dev'));
 app.use(cors());
 
 
+//pangiil routes
+var routes = require('./routes');
+routes(app);
+
+
 
 
 const PORT = process.env.PORT || 5000;
